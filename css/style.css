@@ -203,13 +203,18 @@ body {
           }
 
           .parallax .bg__sbox {
-              background-color: white;
+              background-color:#B2B2B2;
               box-shadow:        
                 inset  0  1em 1em -1em #696868, 
                 inset  0 -1em 1em -1em #696868;
           }
 
-
+          .parallax .bg__projectList{
+              background-color: white;
+              box-shadow:        
+                inset  0 -1em 1em -1em #696868
+          }
+          /*inset  0 -1em 1em -1em #696868;*/
           .parallax .bg__barSbox {
                 background-image: url(
                 https://s3-us-west-2.amazonaws.com/s.cdpn.io/30354/parallax2.jpg
@@ -277,6 +282,24 @@ body {
                 0 -22px 22px -22px rgba(0,0,0,0.8) inset;
           }
 
+.section-title{
+   
+    top:35%;
+    width: 100%;
+    height:50px;
+    position:absolute;
+    text-align:center;
+
+}
+
+
+.section-title h1{
+
+  color: #666666;
+  margin:auto;
+  vertical-align:middle;
+  font-size: 400%;
+}
 
 #circle1{
   text-align: center;
