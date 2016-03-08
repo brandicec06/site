@@ -188,13 +188,7 @@ body {
         .bg__foo, .bg__bazz {
           height : 100vh;
         }
-    
-          .parallax .bg__bazzp {
-              background-color: gray;
-              box-shadow:
-                0 22px 22px -22px rgba(0,0,0,0.8) inset,
-                0 -22px 22px -22px rgba(0,0,0,0.8) inset;
-          }
+
 
           .parallax .bg__foo {
               background-image: url(
@@ -204,6 +198,13 @@ body {
 
           .parallax .bg__sbox {
               background-color:#B2B2B2;
+              box-shadow:        
+                inset  0  1em 1em -1em #696868, 
+                inset  0 -1em 1em -1em #696868;
+          }
+
+          .parallax .bg__sboxProjects {
+              background-color:#FFF;
               box-shadow:        
                 inset  0  1em 1em -1em #696868, 
                 inset  0 -1em 1em -1em #696868;
