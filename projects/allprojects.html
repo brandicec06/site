@@ -43,9 +43,10 @@
   }
 
   ul{
-    width: 300px; 
+    width: 500px; 
     height: 50px; 
-
+    font-weight: bold;
+    background-color: transparent;
   }
 
   .tab{
@@ -154,17 +155,18 @@ div.iarch:hover{
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-  <nav id="_nav" class="navbar navbar-inverse navbar-fixed-top" style="border: none">
+    <nav id="_nav" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
 
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav" style="font-size:18px">
       <li ><a href="#page0">Home</a></li>
     </ul>
 
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-10%; font-size:18px">
       <!--<li class="active"><a href="#">Home</a></li>-->
       <li ><a href="#interact">Interaction</a></li>
-      <li><a href="#visualize">Visulize</a></li>
       <li><a href="#arch">Architecture</a></li>
+      <li><a href="#visualize">Visulize</a></li>
+
     </ul>
 
   </nav>
@@ -181,48 +183,38 @@ div.iarch:hover{
       </div>
       <div class="icons">
         <ul>
-          <li><div class="iarch icon-arch"></div></li>
+          <a href="#interact"><li><div class="iarch icon-arch"></div></li></a>
           <a href="#visualize"><li><div class="iarch icon-arch"></div></li></a>
-          <li><div class="iarch icon-arch"></div></a></li>
-          <li><div class="iarch icon-arch"></div></li>
+          <a href="#arch"><li><div class="iarch icon-arch"></div></li></a>
 
           </ul>
       </div>
     </div>
 
-    <div class="bg__sbox">
+    <div id="interact"  class="bg__sbox">
     <div class="section-title">
-      <h1>Section Title</h1>
+      
+      <h1>Interaction</h1>
     </div>
     </div>
     <div class="bg__projectList"></div>
 
-  <div class="bg__sbox">
+  <div id="arch" class="bg__sbox">
     <div class="section-title">
-      <h1>Section Title</h1>
+      <h1>Architecture</h1>
     </div>
   </div>
     <div class="bg__projectList"></div>
 
-  <div class="bg__sbox">
+  <div id="visualize" class="bg__sbox">
     <div class="section-title">
-      <h1>Section Title</h1>
-    </div>
-  </div>
-    <div class="bg__projectList"></div>
-    <div class="bg__projectList"></div>
-    <div class="bg__projectList"></div>
-
-  <div class="bg__sbox">
-    <div class="section-title">
-      <h1>Section Title</h1>
+      <h1>Visualization</h1>
     </div>
   </div>
     <div class="bg__projectList"></div>
     <div class="bg__projectList"></div>
     <div class="bg__projectList"></div>
-    <div class="bg__projectList"></div>
-    <div class="bg__projectList"></div>
+
 
     <div id="page6" class="bg__last">
       <div class="footer">
