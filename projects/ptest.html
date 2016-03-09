@@ -36,28 +36,36 @@
   }
 
 .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
-  color:#0fb5b3;background-color:transparent
+  color:#0fb5b3;
+  background-color:transparent
 }
 
 .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
-  color:#0fb5b3;background-color:transparent
+  color:#0fb5b3;
+  background-color:transparent
 }
 
   ul{
-    width: 300px; 
+    width: 500px; 
     height: 50px; 
-
+    font-weight: bold;
+    background-color: transparent;
   }
 
   .pInfo{
-   
+    position: absolute;
     width: 300px;
     height: 80%;
-    background-color:#0fb5b3;
-    margin:  auto;
+    /*background-color:#0fb5b3;*/
+    margin-left: 70%;
 
-    vertical-align: middle;
+    top: 10%;
 
+  }
+
+  .pInfo > p{
+    margin: 15px;
+    font-size: 20px;
   }
   </style>
 </head>
@@ -66,14 +74,17 @@
 
 
 
-  <nav id="_nav" class="navbar navbar-inverse navbar-fixed-top" >
+  <nav id="_nav" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent">
 
-  
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav" style="font-size:18px">
+      <li ><a href="#page0">Home</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-10%; font-size:18px">
       <!--<li class="active"><a href="#">Home</a></li>-->
-      <li ><a href="#page1">Home</a></li>
-      <li><a href="#page2">Page 2</a></li>
-      <li><a href="#page3">Page 3</a></li>
+      <li ><a href="#interact">Interaction</a></li>
+      <li><a href="#visualize">Visulize</a></li>
+      <li><a href="#arch">Architecture</a></li>
     </ul>
 
   </nav>
@@ -82,7 +93,7 @@
 
 
 
-    <div id="myCarousel" class="carousel slide"  style="top: 50px"data-ride="carousel">
+    <div id="myCarousel" class="carousel slide"  data-ride="carousel">
 
    
     <div class="carousel-inner" role="listbox">
@@ -118,7 +129,9 @@
   
   <div id="page2" class="bg__sboxProjects" >
       <a name="page2"></a>
-      <div class="pInfo"></div>
+      <div class="pInfo">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
     </div>
   
   <div id="page3" class="bg__baz"></div>
