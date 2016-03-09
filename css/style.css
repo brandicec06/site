@@ -234,8 +234,6 @@ body {
                 );
           }
 
-
-
           .parallax .bg__bar {
                 background-color: #FFF;
           }
@@ -290,6 +288,7 @@ body {
     height:50px;
     position:absolute;
     text-align:center;
+    margin: auto;
 
 }
 

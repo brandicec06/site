@@ -122,6 +122,22 @@ div.iarch:hover{
 
 }
 
+.icon-int:before {
+    color:#FFF;
+    font-size: 500%;
+    font-weight: normal;
+    content: "\e903";
+
+}
+
+.icon-viz:before {
+    color:#FFF;
+    font-size: 500%;
+    font-weight: normal;
+    content: "\e902";
+
+}
+
 .icons{
     display: inline-block;
     top:65%;
@@ -148,8 +164,63 @@ div.iarch:hover{
   margin-top: 40%;
   z-index: 2; 
   color: #61E0DC;
-
 }
+
+/*Quote styles*/
+
+blockquote {
+
+  margin: auto;
+  top: 100px;
+  display: block;
+  background: transparent;
+  width: 800px;
+  padding: 15px 20px 15px 45px;
+  position: relative;
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  /*Borders - (Optional)*/
+  border-left: 15px solid #669DD3;
+  border-right: 2px solid #669DD3;
+  /*Box Shadow - (Optional)*/
+ /* -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;*/
+}
+
+blockquote::before {
+
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote>p{
+  text-align: right;
+}
+
+blockquote em {
+  font-style: italic;
+}
+/*End Quote Style*/
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -183,9 +254,9 @@ div.iarch:hover{
       </div>
       <div class="icons">
         <ul>
-          <a href="#interact"><li><div class="iarch icon-arch"></div></li></a>
-          <a href="#visualize"><li><div class="iarch icon-arch"></div></li></a>
+          <a href="#interact"><li><div class="iarch icon-int"></div></li></a>
           <a href="#arch"><li><div class="iarch icon-arch"></div></li></a>
+          <a href="#visualize"><li><div class="iarch icon-viz"></div></li></a>
 
           </ul>
       </div>
@@ -195,6 +266,12 @@ div.iarch:hover{
     <div class="section-title">
       
       <h1>Interaction</h1>
+      <blockquote>
+      Design needs to be plugged into human behaviour. Design dissolves in behaviour
+      <br>
+      <br>
+      <p><em>- Naoto Fukasawa</em></p>
+    </blockquote>
     </div>
     </div>
     <div class="bg__projectList"></div>
@@ -202,6 +279,12 @@ div.iarch:hover{
   <div id="arch" class="bg__sbox">
     <div class="section-title">
       <h1>Architecture</h1>
+      <blockquote>
+      We shape our buildings, and afterwards, our buildings shape us.
+      <br>
+      <br>
+      <p><em>- Winston Churchill</em></p>
+    </blockquote>
     </div>
   </div>
     <div class="bg__projectList"></div>
@@ -209,13 +292,17 @@ div.iarch:hover{
   <div id="visualize" class="bg__sbox">
     <div class="section-title">
       <h1>Visualization</h1>
+      <blockquote>
+      What is to be sought in designs for the display of information is the clear portrayal of complexity. Not the complication of the simple; rather the task of the designer is to give visual access to the subtle and the difficult – that is, revelation of the complex.
+      <br>
+      <br>
+      <p><em>- Winston Churchill</em></p>
+    </blockquote>
     </div>
   </div>
     <div class="bg__projectList"></div>
     <div class="bg__projectList"></div>
     <div class="bg__projectList"></div>
-
-
     <div id="page6" class="bg__last">
       <div class="footer">
       <h1>Contact</h1>
@@ -244,10 +331,14 @@ div.iarch:hover{
 
   $(document).scroll(function () {
     var y = $(this).scrollTop();
-    if (y > 600) {
-        $('.to-top').fadeIn();
-    } else {
-        $('.to-top').fadeOut();
+    if (y > 200) {
+      $("#_nav").css({
+        "background-color": "#222222"
+      });
+    }else{
+      $("#_nav").css({
+        "background-color": "transparent"
+      });
     }
 
   });
