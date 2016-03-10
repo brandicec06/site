@@ -7,7 +7,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
+  <!--<link rel="icon" href="../../favicon.ico"> Need to add FAVICON-->
 
   <title>Cover Template for Bootstrap</title>
 
@@ -21,14 +21,25 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <script src="js/animate_line.js"></script>
+
+
   <style type="text/css">
   .icon-arch:before {
 
     font-size: 500%;
     font-weight: normal;
     content: "\e901";
+  }
 
-}
+  .skill{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    opacity: 0;
+    right: 0;
+  }
+
   </style>
 
 </head>
@@ -65,8 +76,6 @@
 
     </div>
     <div class="bg__grid">
-
-
 
       <ul class="ul-sm">
 
@@ -159,7 +168,38 @@
     </div>
     <div class="bg__baz"></div>
     <div class="bg__bazz"></div>
-    <div class="bg__bar"></div>
+    <div class="bg__grid" style="background: white">
+  
+
+      <ul class="ul-sm"style="top: 100px">
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+      </ul>
+
+      <ul class="ul-sm" style="top: 250px">
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+      </ul>
+
+      <ul class="ul-sm" style="top: 400px">
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li>
+        <li><div class="skill"></div></li> 
+      </ul>
+      
+
+    </div>
     <div class="bg__ban"></div>
     <div class="bg__last">
       <div class="footer">
@@ -174,6 +214,36 @@
 
   </div>
 
-</body>
+<script type="text/javascript">
+  $(function() {
+    $(window).scroll( function(){
+    
+       
+        $('.skill').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+            bottom_of_window = bottom_of_window + 200;  
+          
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1',
+                  'marginLeft' : "30px"
+                }, 800, "linear",'easeInSine');
+                /*$(this).animate({
+                  'marginLeft' : "30px"
+                },500,"linear");*/
+                    
+            }
+        }); 
+    
+    });
+});
 
+
+</script>
+
+</body>
 </html>
