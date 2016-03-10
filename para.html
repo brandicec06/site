@@ -13,17 +13,40 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   <link href="css/style.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <script src="js/animate_line.js"></script>
+   <script src="js/jquery.scrollTo.js"></script>
 
 
   <style type="text/css">
+
+  .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
+    color:#669DD3;
+    background-color:transparent
+  }
+
+  .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
+    color:#669DD3;
+    background-color:transparent
+  }
+
+
+  #nav_ ul{
+    width: 500px; 
+    height: 50px; 
+    font-weight: bold;
+    background-color: transparent;
+  }
+
   .icon-arch:before {
 
     font-size: 500%;
@@ -32,12 +55,26 @@
   }
 
   .skill{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: black;
+    width: 120px;
+    height: 135px;
     opacity: 0;
     right: 0;
+    overflow: hidden;
+  }
+
+  .skill img{
+    position:relative;
+    text-align: left;
+    max-width:120px; 
+    max-height:100px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .skill p{
+    font-size: 90%; 
+    margin-top: 10px;
+    color: #B6B6B4;
   }
 
   </style>
@@ -45,6 +82,23 @@
 </head>
 
 <body>
+
+    <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
+    <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav" style="font-size:18px">
+      <li ><a href="#page0">Home</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-10%; font-size:18px">
+      <!--<li class="active"><a href="#">Home</a></li>-->
+      <li ><a href="#interact">Interaction</a></li>
+      <li><a href="#arch">Architecture</a></li>
+      <li><a href="#visualize">Visulize</a></li>
+
+    </ul>
+    </div>
+  </nav>
+
   <div class="parallax">
 
     <div class="bg__foo">
@@ -60,21 +114,21 @@
       </div>
     </div>
 
-    <div class="bg__baz">
+    <div class="bg__baz" >
       <div>
-        <p class="aboutitle">...a little bit about me</p>
+        <p class="aboutitle">a little bit about me</p>
 
         <p class="about">
 
-          I'm an architect, educator, and aspiring creative programmer looking to make a difference by integrating my interests in design and computation. My work focuses on inquiries into the human condition and how we interact with our environment. I combine my skills in design, fabrication, and computing to create seamless experiences that assert the role of design in the curation of experience.
+
+
+          <span style="color: #000; font-weight: 900">__</span>I'm an architect, educator, and aspiring creative programmer, and always in persuit of that which enhances the human expeience. My work focuses on inquiries into the human condition and how we interact with our environment. Whether through space, methodology, or bits and bytes, I explore the synergy between the intuitive idiosyncrasies of living and the ability of design to compliment these peculiarities in an intelligent way. I combine my skills in design, fabrication, and computing to create seamless experiences that assert the role of design in the curation of experience.<span style="color: #000; font-weight: 900">__</span>
+
         </p>
       </div>
+      <div class="about_pic" ><img src="img/thesis_review_about.jpg"></div>
     </div>
 
-    <div class="bg__foo">
-      
-
-    </div>
     <div class="bg__grid">
 
       <ul class="ul-sm">
@@ -166,36 +220,37 @@
       </ul>
 
     </div>
-    <div class="bg__baz"></div>
-    <div class="bg__bazz"></div>
-    <div class="bg__grid" style="background: white">
-  
+    <div class="bg__grid" style="background: white; text-align: center;">
 
-      <ul class="ul-sm"style="top: 100px">
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
+      <h2 class="skill-heading">Skills + Tech</h2>
+      <ul class="ul-sk" style="top: 50px">
+        <li><div class="skill"><img src="img/skill_icons/processing.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/js.png"></div></li> 
+        <li><div class="skill"><img src="img/skill_icons/python.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/html.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/css.png"></div></li> 
+        <li><div class="skill"><img src="img/skill_icons/c++.png"></div></li>
       </ul>
 
-      <ul class="ul-sm" style="top: 250px">
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
+
+
+      <ul class="ul-sk" style="top: 200px">
+      
+        <li><div class="skill"><img src="img/skill_icons/rhino.png"></div></li> 
+        <li><div class="skill"><img src="img/skill_icons/gh.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/revit.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/cad.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/max.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/sketchup.png"></div></li>
       </ul>
 
-      <ul class="ul-sm" style="top: 400px">
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li>
-        <li><div class="skill"></div></li> 
+      <ul class="ul-sk" style="top: 350px">
+        <li><div class="skill"><img src="img/skill_icons/illustrator.png"></div></li> 
+        <li><div class="skill"><img src="img/skill_icons/photoshop.png"></div></li> 
+        <li><div class="skill"><img src="img/skill_icons/ae.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/indesign.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/arduino.png"></div></li>
+        <li><div class="skill"><img src="img/skill_icons/vray.png"></div></li> 
       </ul>
       
 
@@ -215,6 +270,7 @@
   </div>
 
 <script type="text/javascript">
+$(document).ready(function(){
   $(function() {
     $(window).scroll( function(){
     
@@ -229,18 +285,44 @@
           
             if( bottom_of_window > bottom_of_object ){
                 
-                $(this).animate({'opacity':'1',
-                  'marginLeft' : "30px"
-                }, 800, "linear",'easeInSine');
-                /*$(this).animate({
-                  'marginLeft' : "30px"
-                },500,"linear");*/
-                    
+                $(this).animate(
+                  {'opacity':'1',
+                  'marginLeft' : "50px"
+                },{duration: 900,
+                   easing: 'easeOutSine'
+                }); 
             }
         }); 
     
     });
 });
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+      $("#nav_").css({
+        "background-color": "#222222"
+      });
+    }else{
+      $("#nav_").css({
+        "background-color": "transparent"
+      });
+    }
+
+  });
+
+
+
+  var skills = ["Processing", "Javascript", "Python", "Html", "CSS", "C++", "Rhinocerous 3d", "Grasshopper 3D", "Revit", "AutoCAD", "3D Max", "Sketchup ", "Illustrator", "Photoshop", "After Effects", "InDesign", "Arduino", "VRay"];
+  var c = 0;
+  $('.skill').each(function(){
+    $(this).append("<p>" +skills[c] + "</p>");
+    c++;
+  })
+ 
+});
+
+
 
 
 </script>

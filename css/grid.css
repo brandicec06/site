@@ -4,6 +4,13 @@
 		text-align: center;
 		
 	}
+
+  .bg__grid .ul-sk{
+    width: 100%;
+    text-align: center;
+     margin-left: -5%;
+  }
+
 }
 
 

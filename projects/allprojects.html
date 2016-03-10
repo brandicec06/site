@@ -226,7 +226,7 @@ blockquote em {
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-    <nav id="_nav" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
+    <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
 
     <ul class="nav navbar-nav" style="font-size:18px">
       <li ><a href="#page0">Home</a></li>
@@ -325,18 +325,18 @@ blockquote em {
    $(this).parent().addClass("active");
 
    $(document).ready(function() {
-     $('#_nav').localScroll({duration:800});
+     $('#nav_').localScroll({duration:800});
    });
  });
 
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 200) {
-      $("#_nav").css({
+      $("#nav_").css({
         "background-color": "#222222"
       });
     }else{
-      $("#_nav").css({
+      $("#nav_").css({
         "background-color": "transparent"
       });
     }
