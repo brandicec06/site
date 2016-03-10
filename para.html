@@ -39,6 +39,12 @@
     background-color:transparent
   }
 
+  .navbar .nav>li>a{
+    color: black;
+
+  }
+
+
 
   #nav_ ul{
     width: 500px; 
@@ -91,7 +97,7 @@
 
     <ul class="nav navbar-nav navbar-right" style="margin-right:-10%; font-size:18px">
       <!--<li class="active"><a href="#">Home</a></li>-->
-      <li ><a href="#interact">Interaction</a></li>
+      <li ><a id="mtext" href="#interact" >Interaction</a></li>
       <li><a href="#arch">Architecture</a></li>
       <li><a href="#visualize">Visulize</a></li>
 
@@ -301,17 +307,15 @@ $(document).ready(function(){
     var y = $(this).scrollTop();
     if (y > 200) {
       $("#nav_").css({
-        "background-color": "#222222"
+        "background-color": "#222222",
       });
+
     }else{
       $("#nav_").css({
         "background-color": "transparent"
       });
     }
-
   });
-
-
 
   var skills = ["Processing", "Javascript", "Python", "Html", "CSS", "C++", "Rhinocerous 3d", "Grasshopper 3D", "Revit", "AutoCAD", "3D Max", "Sketchup ", "Illustrator", "Photoshop", "After Effects", "InDesign", "Arduino", "VRay"];
   var c = 0;
