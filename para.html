@@ -317,10 +317,13 @@ $(document).ready(function(){
     }
   });
 
+
+  var skill_level=["<span style=color: 'red'; font-size: 400%> &#8226</span>"];
+
   var skills = ["Processing", "Javascript", "Python", "Html", "CSS", "C++", "Rhinocerous 3d", "Grasshopper 3D", "Revit", "AutoCAD", "3D Max", "Sketchup ", "Illustrator", "Photoshop", "After Effects", "InDesign", "Arduino", "VRay"];
   var c = 0;
   $('.skill').each(function(){
-    $(this).append("<p>" +skills[c] + "</p>");
+    $(this).append("<p>" +skills[c] + "" + skill_level[0] +"</p>");
     c++;
   })
  
@@ -330,6 +333,5 @@ $(document).ready(function(){
 
 
 </script>
-
 </body>
 </html>
