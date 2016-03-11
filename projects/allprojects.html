@@ -158,12 +158,28 @@ div.iarch:hover{
 }
 
 .to-top{
+
   width: 100px;
-  height: 100px;
+  height: 30px;
   position: fixed;
-  margin-top: 40%;
+  margin-top: 50%;
+  margin-left: 90%;
   z-index: 2; 
-  color: #61E0DC;
+  color: #345D86;
+  background-color: white;
+  border: solid #345D86;
+  border-radius: 10px;
+  text-align: center; 
+  display: none;
+ 
+}
+
+.to-top div{
+  position: relative;
+  border: solid;
+  line-height: -10px;
+  top: 25%;
+
 }
 
 /*Quote styles*/
@@ -243,7 +259,8 @@ blockquote em {
   </nav>
   
   <div class="to-top">
-     <div class="glyphicon glyphicon-arrow-up" ></div>
+  <span>To Top  -  </span>
+     <span class="glyphicon glyphicon-arrow-up" ></span>
   </div>
   
   <div id ="page0" class="parallax">
@@ -335,10 +352,12 @@ blockquote em {
       $("#nav_").css({
         "background-color": "#222222"
       });
+      $(".to-top").fadeIn();
     }else{
       $("#nav_").css({
         "background-color": "transparent"
       });
+      $(".to-top").fadeOut();
     }
 
   });
