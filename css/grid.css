@@ -52,7 +52,7 @@ li {
   position: relative;
   text-align: center;
   cursor: default;
-  background: #42b078;
+  background: #669DD3;
 }
 
 .hovereffect .overlay {
@@ -89,6 +89,7 @@ li {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
+  top: 80%;
   position: relative;
   font-size: 17px;
   overflow: hidden;

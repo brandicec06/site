@@ -55,14 +55,13 @@ body {
   padding-left: 30px;
   display: inline-block;
 }
-
+/*animated underline*/
 #enlarge {
     background: #FFF;
     height: 2px;
     width: 0px;
     top: 20%;
     position:absolute;
-    
     
 }
 
@@ -231,9 +230,10 @@ body {
 
           .parallax .bg__grid {
 
-                 background-image: url(
+                background-color: #434D53;;
+                 /*background-image: url(
                 ../img/cover1.jpg
-                );
+                );*/
           }
 
           .parallax .bg__bar {
@@ -260,9 +260,9 @@ body {
           .parallax .bg__baz {
               height : 100vh;
               text-align: center;
-              padding-left: 200px;
+              padding-left: 100px;
               padding-top: 10%;
-              background-color: #4574A0;
+              background-color: #345D86;
           }
 
 
@@ -276,7 +276,9 @@ body {
           }
 
           .parallax .bg__last{
+            width: 100%;
             background-color: #434D53;
+            margin: 0 auto;
             box-shadow:
                 0 22px 22px -22px rgba(0,0,0,0.8) inset,
                 0 -22px 22px -22px rgba(0,0,0,0.8) inset;
@@ -302,8 +304,28 @@ body {
   font-size: 400%;
 }
 
-.section-title h1{
+.featured{
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  font-size: 300%;
+  font-weight: 300;
+  top: 30px;
+  margin-left: 36%;
+  color: #E5E5E5;
+}
 
+.featured u{
+  text-decoration: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.skill-heading u{
+    text-decoration: none;
+  border-bottom: 1px solid #666666;
+}
+
+.section-title h1{
   color: #666666;
   margin:auto;
   vertical-align:middle;
@@ -321,7 +343,6 @@ body {
   border-radius: 50%;
   height: 150px;
   width: 150px;
- 
   margin-top: 10%;
   margin: 75px 100px;
 
@@ -368,8 +389,19 @@ body {
 
 .footer{
   position: absolute;
-  margin-left: 100px;
+  width: 100%;
+}
+
+.footer u{
+  text-decoration: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+.footer div{
+  text-align: center;
   margin-top: 100px;
   color: #D1D0D1;
 }
-
+.footer h3{
+  display: inline-block;
+  padding: 50px;
+}

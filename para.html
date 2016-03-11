@@ -24,27 +24,25 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <script src="js/animate_line.js"></script>
-   <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.localScroll.js"></script>
 
 
   <style type="text/css">
 
   .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
-    color:#669DD3;
+    color:#4E77A0;
     background-color:transparent
   }
 
   .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
-    color:#669DD3;
+    color:#4E77A0;
     background-color:transparent
   }
 
   .navbar .nav>li>a{
-    color: black;
-
+    color: #D3D3D3;
   }
-
-
 
   #nav_ ul{
     width: 500px; 
@@ -91,15 +89,12 @@
 
     <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
     <div class="navbar-collapse collapse">
-    <ul class="nav navbar-nav" style="font-size:18px">
-      <li ><a href="#page0">Home</a></li>
-    </ul>
 
     <ul class="nav navbar-nav navbar-right" style="margin-right:-10%; font-size:18px">
       <!--<li class="active"><a href="#">Home</a></li>-->
-      <li ><a id="mtext" href="#interact" >Interaction</a></li>
-      <li><a href="#arch">Architecture</a></li>
-      <li><a href="#visualize">Visulize</a></li>
+      <li ><a href="#about" >About</a></li>
+      <li><a href="#works">Selected Works</a></li>
+      <li><a href="#skills">Skills</a></li>
 
     </ul>
     </div>
@@ -120,7 +115,7 @@
       </div>
     </div>
 
-    <div class="bg__baz" >
+    <div id="about" class="bg__baz" >
       <div>
         <p class="aboutitle">a little bit about me</p>
 
@@ -135,14 +130,29 @@
       <div class="about_pic" ><img src="img/thesis_review_about.jpg"></div>
     </div>
 
-    <div class="bg__grid">
+    <div id="works"class="bg__grid">
+          <h2 class="featured"><u>Featured Projects</u></h2>
 
       <ul class="ul-sm">
 
         <li class="cell">
 
           <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
+            <div class="overlay">
+              
+              <p> 
+                <a href="#"><h2>Effect 12</h2></a>
+              </p> 
+            </div>
+          </div>
+
+        </li>
+
+        <li>
+
+          <div class="hovereffect">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
             <div class="overlay">
               <h2>Effect 12</h2>
               <p> 
@@ -156,21 +166,7 @@
         <li>
 
           <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
-            <div class="overlay">
-              <h2>Effect 12</h2>
-              <p> 
-                <a href="#">LINK HERE</a>
-              </p> 
-            </div>
-          </div>
-
-        </li>
-
-        <li>
-
-          <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
             <div class="overlay">
               <h2>Effect 12</h2>
               <p> 
@@ -184,7 +180,7 @@
         <li class="cell">
 
           <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
             <div class="overlay">
               <h2>Effect 12</h2>
               <p> 
@@ -198,7 +194,7 @@
         <li>
 
           <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
             <div class="overlay">
               <h2>Effect 12</h2>
               <p> 
@@ -212,7 +208,7 @@
         <li>
 
           <div class="hovereffect">
-            <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+            <img class="img-responsive" src="img/feat1.jpg" alt="">
             <div class="overlay">
               <h2>Effect 12</h2>
               <p> 
@@ -226,9 +222,9 @@
       </ul>
 
     </div>
-    <div class="bg__grid" style="background: white; text-align: center;">
+    <div id="skills"class="bg__grid" style="background: white; text-align: center;">
 
-      <h2 class="skill-heading">Skills + Tech</h2>
+      <h2 class="skill-heading"><u>Skills + Tech</u></h2>
       <ul class="ul-sk" style="top: 50px">
         <li><div class="skill"><img src="img/skill_icons/processing.png"></div></li>
         <li><div class="skill"><img src="img/skill_icons/js.png"></div></li> 
@@ -264,18 +260,32 @@
     <div class="bg__ban"></div>
     <div class="bg__last">
       <div class="footer">
+      <div>
         <h1>Contact</h1>
         <br>
         <br>
-        <h3>Email</h3>
-        <h3>Title</h3>
-        <h3>Resume</h3>
+          <h3 style="font-size: 200%">Email:</h3>
+          <h2><u>bmc4c@virginia.edu</u></h2>
+          <br>
+              <h3 >Resume</h3>
+
+        </div>
       </div>
     </div>
 
   </div>
 
 <script type="text/javascript">
+
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+
+   $(document).ready(function() {
+     $('#nav_').localScroll({duration:800});
+   });
+ });
+
 $(document).ready(function(){
   $(function() {
     $(window).scroll( function(){
@@ -312,7 +322,7 @@ $(document).ready(function(){
 
     }else{
       $("#nav_").css({
-        "background-color": "transparent"
+        "background-color": "transparent"/*rgba(34,34,42,0*/
       });
     }
   });
