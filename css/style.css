@@ -320,6 +320,27 @@ body {
   border-bottom: 1px solid #E5E5E5;
 }
 
+.allprojects{
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  font-size: 150%;
+  font-weight: 300;
+  bottom: 25px;
+  margin-left: 36%;
+  color: #E5E5E5;
+}
+
+.allprojects u{
+  text-decoration: none;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.allprojects u a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .skill-heading u{
     text-decoration: none;
   border-bottom: 1px solid #666666;
