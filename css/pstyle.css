@@ -50,6 +50,16 @@
     margin-left: 15px;
   }
 
+  .pCap{
+    position: absolute;
+    font-size: 150%;
+    margin-left: 80%;
+    margin-top: 47%;
+    color: black;
+  }
+
+
+
   #pimage{
     background-color: black;
     background-size: contain;
