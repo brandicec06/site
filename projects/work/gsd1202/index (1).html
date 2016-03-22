@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+
+	
+	<link rel="stylesheet" href="css/fontello.css" />
+	<link rel="stylesheet" href="css/menu.css" />
+	<link rel="stylesheet" href="css/sidebar.css" />
+
+
+	<script type="text/javascript" src="js/grid.js"></script>
+
+	
+	<script type="text/javascript" src="js/sidebar.js"></script>
+
+	<script>
+	$('#jsi-nav').sidebar({
+		trigger: '.jsc-sidebar-trigger',
+		pullCb: function () { console.log('pull'); },
+		pushCb: function () { console.log('push'); }
+	});
+	</script>
+
+	
+
+</head>
+
+<body>
+
+	<div class="wrapper jsc-sidebar-content jsc-sidebar-pulled">
+		<nav>
+			<a href="#" class="icon-menu link-menu jsc-sidebar-trigger"></a>
+		</nav>
+
+
+
+		<div class="cats">
+			<ul id="filters" class="clearfix">
+				<li><span class="filter active" data-filter="app inst int viz arch">All</span></li>
+				<li><span class="filter" data-filter="viz">Visualize</span></li>
+				<li><span class="filter" data-filter="int">Interact</span></li>
+				<li><span class="filter" data-filter="app">App</span></li>
+				<li><span class="filter" data-filter="inst">Installation</span></li>
+				<li><span class="filter" data-filter="arch">Arch</span></li>
+			</ul>
+		</div>
+
+		<div class="container">
+
+
+			<div id="portfoliolist">
+
+				<div  class="portfolio int" id="first" data-cat="int">
+					<a href="projects/thesis.html">
+						<div class="portfolio-wrapper">				
+							<img src="images/thesis/lth.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+
+									<a class="text-title"><a href="projects/thesis.html">EEG Controlled 3D Model</a>
+								</a>
+								<!--<span class="text-category">Logo</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>		
+
+
+
+				<div class="portfolio int" data-cat="int">
+					<a href="projects/coflexions.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/lcoflex.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/coflexions.html">CoFlexions</a>
+								</a>
+
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>		
+
+				<div class="portfolio int" data-cat="int">
+					<a href="projects/urban_infoscapes.html">
+						<div class="portfolio-wrapper">						
+							<img src="images/luinfo.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/urban_infoscapes.html">Urban Infoscapes</a>
+								</a>
+								<!--<span class="text-category">Web design</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>				
+
+				<div class="portfolio app" data-cat="app">
+					<a href="projects/Skill_Evaluation_app.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/lviz.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/Skill_Evaluation_app.html">Skills Tool App</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+
+				<div class="portfolio viz" data-cat="viz">
+					<a href="projects/zip_app.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/lzip.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/zip_app.html">Visualizing Inequality</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>
+
+
+				<div class="portfolio inst" data-cat="inst">
+					<a href="projects/refab.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/lrefab.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/refab.html">Hexdome</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+				<div class="portfolio inst" data-cat="inst">
+					<a href="projects/arch/1317.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/1317.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/1317.html">Responsive Environments</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+
+
+				<div class="portfolio arch" data-cat="arch">
+					<a href="projects/arch/1306.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/1306.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/1306.html">Evolutionary Infrastructure</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+				<!--pppppppppppppppppppppppppppppppppppppppppp-->
+
+				<div class="portfolio arch" data-cat="arch">
+					<a href="projects/arch/401.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/401.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/401.html">Tower for Learning</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+				<div class="portfolio arch" data-cat="arch">
+					<a href="projects/arch/402.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/402.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/402.html">Water Ecologies</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>		
+
+
+				<div class="portfolio arch" data-cat="arch">
+					<a href="projects/arch/302.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/302.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/302.html">A Charlottesville Church</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>	
+
+
+				<div class="portfolio arch" data-cat="arch">
+					<a href="projects/arch/Sketches.html">
+						<div class="portfolio-wrapper">			
+							<img src="images/sketch.jpg" alt="" />
+							<div class="label">
+								<div class="label-text">
+									<a class="text-title"><a href="projects/arch/Sketches.html">Sketches</a>
+								</a>
+								<!--<span class="text-category">Business card</span>-->
+							</div>
+							<div class="label-bg"></div>
+						</div></a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		</div>
+
+		</div>
+
+	</div>
+	<nav class="sidebar jsc-sidebar" id="jsi-nav" data-sidebar-options="">
+		<ul class="sidebar-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ehtml/about.html">About Me</a></li>
+			<li><a href="ehtml/resume.pdf">Resume</a></li>
+
+		</ul>
+	</nav>
+
+
+	<script src="js/lib/jquery.min.js"></script>
+
+	<script src="js/sidebar.js"></script>
+
+	<script>
+	$('#jsi-nav').sidebar({
+		trigger: '.jsc-sidebar-trigger',
+		pullCb: function () { console.log('pull'); },
+		pushCb: function () { console.log('push'); }
+	});
+	</script>
+
+</body>

@@ -1,0 +1,65 @@
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+ 
+
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
+  color:#4E77A0;
+  background-color:transparent
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
+  color:#4E77A0;
+  background-color:transparent
+}
+
+  ul{
+    width: 500px; 
+    height: 50px; 
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .pInfo{
+    position: absolute;
+    width: 320px;
+    height: 80%;
+    /*background-color:#0fb5b3;*/
+    margin-left: 70%;
+
+    top: 10%;
+
+  }
+
+  .pInfo > p{
+    margin: 15px;
+    font-size: 18px;
+  }
+
+  .pInfo > h1{
+    margin-left: 15px;
+  }
+
+  #pimage{
+    background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bg__sboxProjects .team{
+    position: absolute;
+    font-size: 150%;
+    margin-left: 50px;
+    margin-top: 47%;
+    color: #a8a8a8;
+  }
