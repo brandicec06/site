@@ -11,7 +11,7 @@
   <!-- Bootstrap core CSS -->
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/grid.css" rel="stylesheet">
-
+    <link href="../css/pstyle.css" rel="stylesheet">
 
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -19,71 +19,14 @@
   <script src="../js/jquery.localScroll.js"></script>
   <script src="../js/jquery.scrollTo.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <style>
-
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
- 
-
-    position: relative;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center center;
-
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-
-.navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
-  color:#4E77A0;
-  background-color:transparent
-}
-
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
-  color:#4E77A0;
-  background-color:transparent
-}
-
-  ul{
-    width: 500px; 
-    height: 50px; 
-    font-weight: bold;
-    background-color: transparent;
-  }
-
-  .pInfo{
-    position: absolute;
-    width: 300px;
-    height: 80%;
-    /*background-color:#0fb5b3;*/
-    margin-left: 70%;
-
-    top: 10%;
-
-  }
-
-  .pInfo > p{
-    margin: 15px;
-    font-size: 20px;
-  }
-
-  .pInfo > h1{
-    margin-left: 15px;
-  }
-
-  #pimage{
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .bg__bazz p{
-    position: absolute;
-    margin-left: 30px;
-    margin-top: 48%;
-    border: solid;
-  }
+  
+  <style type="text/css">
+    .pCap{
+      margin-left: 5%; 
+      margin-top: 48%;
+    }
   </style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -154,24 +97,39 @@
   
   <div id="pimage" class="bg__bazz" style="background-position:50% 55px; background-color: white; background-size: 70%; background-image: url(work/thesis/images/cover1_w.jpg)"></div>
   <div id="pimage" class="bg__sboxProjects" style="background-position: 50% 55px;background-color: white; background-size: 70%; background-image: url(work/thesis/images/cover2_w.jpg)"></div>
-  <div id="pimage" class="bg__bazz" style="background-size: 52%;background-position: 50% 55px; background-color: #F1F1F1; background-image: url(work/thesis/images/ce1.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style=" background-size: 52%;background-position: 50% 55px;background-color: #F1F1F1; background-image: url(work/thesis/images/ce2.jpg)"></div>
+  <div id="pimage" class="bg__bazz" style="background-size: 52%;background-position: 50% 55px; background-color: #F1F1F1; background-image: url(work/thesis/images/ce1.jpg)">
+    
+    <p class="pCap">Cell Study</p>
+
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style=" background-size: 52%;background-position: 50% 55px;background-color: #F1F1F1; background-image: url(work/thesis/images/ce2.jpg)">
+        <p class="pCap">Cell Study</p>
+  </div>
 
   <div id="pimage" class="bg__bazz">
     <iframe src="https://player.vimeo.com/video/115602224" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
   </div>
 
-  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re1.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re2.jpg)"></div>
-  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re3.jpg)"></div>
+  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re1.jpg)">
+        <p class="pCap">Cell Analysis</p>
+
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re2.jpg)">
+            <p class="pCap">Cell Analysis</p>
+
+  </div>
+  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1; background-size: 70%;background-position: 50% 55px; background-image: url(work/thesis/images/re3.jpg)">
+            <p class="pCap">Cell Analysis</p>
+
+  </div>
   <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/thesis/images/agg1.jpg)"></div>
-  <div id="pimage" class="bg__bazz" style="background-image: url(work/thesis/images/agg2.jpg)"></div>
+  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1;background-image: url(work/thesis/images/agg2.jpg)"></div>
   <div id="pimage" class="bg__bazz" style="background-image: url(work/thesis/images/ant1.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/thesis/images/ant2.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-color: #F1F1F1;background-image: url(work/thesis/images/ant2.jpg)"></div>
   <div id="pimage" class="bg__bazz" style="background-image: url(work/thesis/images/em1.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/thesis/images/em3.jpg)"></div>
-  <div id="pimage" class="bg__bazz" style="background-image: url(work/thesis/images/plan.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/thesis/images/section.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-color: #F1F1F1;background-image: url(work/thesis/images/em3.jpg)"></div>
+  <div id="pimage" class="bg__bazz" style="background-color: #F1F1F1;background-image: url(work/thesis/images/plan.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-color: #F1F1F1;background-image: url(work/thesis/images/section.jpg)"></div>
 
   <div id="page3" class="bg__last">
       <div class="footer">
@@ -182,7 +140,7 @@
           <h3 style="font-size: 200%">Email:</h3>
           <h2><u>bmc4c@virginia.edu</u></h2>
           <br>
-              <h3 >Resume</h3>
+                <h3><a href="resume.pdf">Resume</a></h3>
 
         </div>
       </div>

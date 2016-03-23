@@ -14,16 +14,26 @@
   <link href="../css/pstyle.css" rel="stylesheet">
 
 
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="../js/jquery.localScroll.js"></script>
   <script src="../js/jquery.scrollTo.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
+      color:#4E77A0;
+      background-color:transparent
+    }
+
+    .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
+      color:#4E77A0;
+      background-color:transparent
+    }
+  </style>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-
 
 
   <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
@@ -61,7 +71,7 @@
 
         <p>
         <br>
-        This project maps socioeconomic indicators to United States zip codes to illustrate wealth inequality in the united states. The application is built in the Processing software.
+        This project maps socioeconomic indicators to United States zip codes to illustrate wealth inequality in the united states. The application is built in the Processing software, with the base code used from Ben Fry's zipcode application.
         <br>
         <br>
 
@@ -77,8 +87,12 @@
 
 
 
-  <div id="pimage" class="bg__bar" style="background-image: url(work/equality/country.jpg)"></div>
-  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/equality/zip.jpg)"></div>
+  <div id="pimage" class="bg__bar" style="background-image: url(work/equality/country.jpg)">
+    <p class="pCap" style="color: white">Country Level Data</p>
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/equality/zip.jpg)">
+    <p class="pCap" style="color: white">Zip Code Level Data</p>
+  </div>
 
   <div id="connect" class="bg__last">
       <div class="footer">

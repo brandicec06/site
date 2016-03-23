@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Population Health Mapping</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/grid.css" rel="stylesheet">
+  <link href="../css/pstyle.css" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../js/jquery.localScroll.js"></script>
+  <script src="../js/jquery.scrollTo.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .navbar-inverse .navbar-nav>li>a:focus,.navbar-inverse .navbar-nav>li>a:hover{
+      color:#4E77A0;
+      background-color:transparent
+    }
+
+    .navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:focus,.navbar-inverse .navbar-nav>.active>a:hover{
+      color:#4E77A0;
+      background-color:transparent
+    }
+
+   .pCap{
+      margin-left: 5%; 
+      margin-top: 48%;
+      color: black;
+    }
+
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+  <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
+
+    <ul class="nav navbar-nav" style="font-size:18px">
+      <li ><a href="../index.html">Home</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-20%; font-size:18px">
+      <!--<li class="active"><a href="#">Home</a></li>-->
+      <li ><a href="#interact"></a></li>
+      <li><a href="allprojects.html">Back to Works</a></li>
+      <li><a href="#connect"></a></li>
+
+    </ul>
+
+  </nav>
+
+  <div id ="page1" class="parallax">
+
+  <div id="pimage" class="bg__bar">
+  
+   <iframe src="https://player.vimeo.com/video/160147724" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  </div>
+
+
+  <!--<div id="pimage" class="bg__bar" style="background-position: 0px 50px; background-image: url(work/mapviz/country.jpg)"></div>-->
+  
+  
+  <div id="page2" class="bg__sboxProjects" style="color: black; background-position: 50px 120px; background-size: 55% 70%; background-repeat: no-repeat; background-image: url(work/mapviz/m3.jpg)" >
+      <a name="page2"></a>
+      <div class="pInfo">
+        <h1>Population Health Mapping</h1>
+
+        <p style="font-size: 16px">
+        <br>
+        The increasing amount of data describing the health of a given population allows for critical insight into proactive design methedologies in targeting new treatment facilities. This project combines proprietary population health data with census data to understand the socio-economic perspctive of a community's health. 
+        <br>
+        <br>
+        Using an online portal to retrieve census data for users' specfic area of interest, information is fed into a visualization tool for custom datacomparsions. Users have the ability to overlay various populattion health statistics onto regional census data to discover relationships between a partcular heatlh statistic and demographic data
+        </p>
+      </div>
+
+      <p class="team">Development Team: Brandon Cuffy, Dan Anthony</p>
+
+  </div>
+
+
+
+
+
+  <div id="pimage" class="bg__bar" style="background-image: url(work/mapviz/m1.jpg)">
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/mapviz/m2.jpg)">
+  </div>
+  <div id="pimage" class="bg__bar" style="background-image: url(work/mapviz/m3.jpg)">
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/mapviz/m4.jpg)">
+    <p class="pCap">All Population Health Data Points</p>
+  </div>
+    <div id="pimage" class="bg__bar" style="background-image: url(work/mapviz/m5.jpg)">
+    <p class="pCap">Filtered Health Data</p>
+  </div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/mapviz/m6.jpg)">
+    <p class="pCap">Overlayed Census Data</p>
+  </div>
+
+  <div id="connect" class="bg__last">
+      <div class="footer">
+      <div>
+        <h1>Contact</h1>
+        <br>
+        <br>
+          <h3 style="font-size: 200%">Email:</h3>
+          <h2><u><a href="mailto:bmc4c@virginia.edu">bmc4c@virginia.edu</a></u></h2>
+          <br>
+              <h3><a href="resume.pdf">Resume</a></h3>
+
+        </div>
+      </div>
+
+
+</div><!--parallax-->
+
+<script type="text/javascript">
+  $(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+  
+  $(document).ready(function() {
+   $('#nav_').localScroll({duration:800});
+  });
+});
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+      $("#nav_").css({
+        "background-color": "#222222"
+      });
+    }else{
+      $("#nav_").css({
+        "background-color": "transparent"
+      });
+    }
+
+  });
+
+</script>
+
+
+</body>
+</html>
