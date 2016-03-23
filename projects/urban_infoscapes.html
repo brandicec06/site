@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Urban Infoscapes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/grid.css" rel="stylesheet">
+  <link href="../css/pstyle.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../js/jquery.localScroll.js"></script>
+  <script src="../js/jquery.scrollTo.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+
+
+  <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
+
+    <ul class="nav navbar-nav" style="font-size:18px">
+      <li ><a href="../index.html">Home</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-20%; font-size:18px">
+      <!--<li class="active"><a href="#">Home</a></li>-->
+      <li ><a href="#interact"></a></li>
+      <li><a href="allprojects.html">Back to Works</a></li>
+      <li><a href="#connect"></a></li>
+
+    </ul>
+
+  </nav>
+
+    <div id ="page1" class="parallax">
+
+   <div id="pimage" class="bg__bar">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xXAx-WrjtUo" frameborder="0" allowfullscreen ></iframe>
+    </div>
+  
+  
+  <div id="page2" class="bg__sboxProjects" style="color: black;background-position: 100px; background-size: 800px  600px; background-repeat: no-repeat; background-image: url(work/uinfo/ui_diagram.jpg)" >
+      <a name="page2"></a>
+      <div class="pInfo">
+        <h1>Urban Infoscapes</h1>
+        <br>
+        <p style="font-size: 14px">The public sphere is where we used to turn to for information. We go out to grab newspapers, read billboards, or simply talk to each other. The public sphere is a destination instead of an in-between space, a destination for physical and information transactions. Building envelopes exposed in the public sphere then reflect on that condition. The separation of public and private articulates the nature of what is separated and behind, exhibiting the human need for privacy and the urge to express oneself simultaneously. These interfaces are in the form of walls and windows. Technology however, has almost disabled that condition. People are plugged into the Internet everywhere, a realm of intensified information, making the public realm seem like a formality. The Internet has enabled mobile devices to further contribute to information saturation making the public domain devoid of experience.</p>
+      </div>
+
+
+
+  </div>
+
+  <div id="pimage" class="bg__bar" style=" background-image: url(work/uinfo/state1.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/uinfo/state2.jpg)"></div>
+  <div id="pimage" class="bg__bar" style=" background-image: url(work/uinfo/state3.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/uinfo/state4.jpg)"></div>
+  <div id="pimage" class="bg__bar" style=" background-image: url(work/uinfo/state5.jpg)"></div>
+
+  <div id="pimage" class="bg__bar" style=" background-image: url(work/uinfo/store1.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/uinfo/store2.jpg)"></div>
+
+  <div id="pimage" class="bg__bar" style=" background-image: url(work/uinfo/time1.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-image: url(work/uinfo/time2.jpg)"></div>
+
+    <div id="pimage" class="bg__bar" style="background-color: white; background-size: 80%; background-image: url(work/uinfo/ui_data.jpg)"></div>
+
+  <div id="connect" class="bg__last">
+      <div class="footer">
+      <div>
+        <h1>Contact</h1>
+        <br>
+        <br>
+          <h3 style="font-size: 200%">Email:</h3>
+          <h2><u><a href="mailto:bmc4c@virginia.edu">bmc4c@virginia.edu</a></u></h2>
+          <br>
+              <h3><a href="resume.pdf">Resume</a></h3>
+
+        </div>
+      </div>
+
+
+</div><!--parallax-->
+
+<script type="text/javascript">
+  $(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+  
+  $(document).ready(function() {
+   $('#nav_').localScroll({duration:800});
+  });
+});
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+      $("#nav_").css({
+        "background-color": "#222222"
+      });
+    }else{
+      $("#nav_").css({
+        "background-color": "transparent"
+      });
+    }
+
+  });
+
+</script>
+
+
+</body>
+</html>

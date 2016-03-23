@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Skill Evaluation Tool</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/grid.css" rel="stylesheet">
+  <link href="../css/pstyle.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="../js/jquery.localScroll.js"></script>
+  <script src="../js/jquery.scrollTo.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+
+
+  <nav id="nav_" class="navbar navbar-inverse navbar-fixed-top" style="border: none; background-color: transparent; transition: background-color 0.5s ease">
+
+    <ul class="nav navbar-nav" style="font-size:18px">
+      <li ><a href="../index.html">Home</a></li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right" style="margin-right:-20%; font-size:18px">
+      <!--<li class="active"><a href="#">Home</a></li>-->
+      <li ><a href="#interact"></a></li>
+      <li><a href="allprojects.html">Back to Works</a></li>
+      <li><a href="#connect"></a></li>
+
+    </ul>
+
+  </nav>
+
+    <div id ="page1" class="parallax">
+
+   <div id="pimage" class="bg__bar">
+<iframe src="https://player.vimeo.com/video/117348178" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/117348178">Skill Evaluation App</a> from <a href="https://vimeo.com/user35937438">Brandon Cuffy</a> on <a href="https://vimeo.com">Vimeo</a>.</p>    </div>
+  
+  
+  <div id="page2" class="bg__sboxProjects" style="color: black;background-position: 200px; background-size: 500px  500px; background-repeat: no-repeat; background-image: url(work/skill/vis.jpg)" >
+      <a name="page2"></a>
+      <div class="pInfo">
+        <h1>Skill Evaluation Tool</h1>
+        <br>
+        <p style="font-size: 14px">Co-developer of application written in Processing to create a tool for Skills evaluation for over 600 employees at NBBJ. Using data fathered from surveys, data is now visualized and able to be sorted and filtered by employee location, title, software packages, and discipline. In addition, the Skills Tool will allow the balanced assembly of project teams with adequate skill sets needed for the execution of design projects from concept design through construction documentation. 
+        <br>
+        <br>
+        An essential feature of the tool it the ability to create skill baselines for each role, ensuring employees are able to get effective training for software skills not at the baseline levels. Also, the tool allows employee training priorities to be recorded and saved as staff members are being reviewed. This will help more efficiently distribute annual budget allocations for training across the entire breadth of the firm.</p>
+      </div>
+
+
+
+  </div>
+
+  <div id="pimage" class="bg__bar" style="background-color: white; background-size: 80%; background-image: url(work/skill/skill_diagram.jpg)"></div>
+  <div id="pimage" class="bg__sboxProjects" style="background-color: white; background-size: 60%; background-image: url(work/skill/interface1.png)"></div>
+
+
+  <div id="connect" class="bg__last">
+      <div class="footer">
+      <div>
+        <h1>Contact</h1>
+        <br>
+        <br>
+          <h3 style="font-size: 200%">Email:</h3>
+          <h2><u><a href="mailto:bmc4c@virginia.edu">bmc4c@virginia.edu</a></u></h2>
+          <br>
+              <h3><a href="resume.pdf">Resume</a></h3>
+
+        </div>
+      </div>
+
+
+</div><!--parallax-->
+
+<script type="text/javascript">
+  $(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+  
+  $(document).ready(function() {
+   $('#nav_').localScroll({duration:800});
+  });
+});
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 200) {
+      $("#nav_").css({
+        "background-color": "#222222"
+      });
+    }else{
+      $("#nav_").css({
+        "background-color": "transparent"
+      });
+    }
+
+  });
+
+</script>
+
+
+</body>
+</html>
