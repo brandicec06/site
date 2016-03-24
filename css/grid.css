@@ -52,6 +52,7 @@ li {
   position: relative;
   text-align: center;
   cursor: default;
+  top:-10px;
   background: #669DD3;
 }
 
